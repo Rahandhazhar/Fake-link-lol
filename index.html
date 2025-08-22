@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Connecting...</title>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      flex-direction: column;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="line1">Tracking IP address...</div>
+  <div id="line2" class="hidden">IP successfully stolen.</div>
+  <div id="line3" class="hidden">Just kidding. You got pranked 🤡<br><br>
+    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" style="color: red;">Watch your back 😈</a>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('line2').classList.remove('hidden');
+    }, 2000);
+    
+    setTimeout(() => {
+      document.getElementById('line1').classList.add('hidden');
+    }, 2000);
+    
+    setTimeout(() => {
+      document.getElementById('line2').classList.add('hidden');
+      document.getElementById('line3').classList.remove('hidden');
+    }, 4000);
+  </script>
+</body>
+</html>
